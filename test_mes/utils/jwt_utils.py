@@ -19,7 +19,7 @@ def get_valid_token(user):
         mes_user.session_id = str(uuid4())
 
     if mes_user.mes_jwt_token and mes_user.mes_jwt_token_expire_time > now:
-        return user.mes_jwt_token
+        return mes_user.mes_jwt_token
 
     exp_time = now + datetime.timedelta(minutes=JWT_EXPIRATION_MINUTES)
 

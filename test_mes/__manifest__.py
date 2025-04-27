@@ -10,7 +10,8 @@
     "depends": [
         'base',
         'web',
-        'auth_signup'
+        'auth_signup',
+        'sale'
     ],
     'auto_install': False,
     "data": [
